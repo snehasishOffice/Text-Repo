@@ -1,0 +1,154 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "201b0eb0-5619-11ef-aa15-a127638e3a77"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "cde63f80-54b4-11ef-aa15-a127638e3a77"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "6715ab91-69e7-11ef-8345-c396246a79d7"
+    },
+    "label" : "",
+    "name" : "Branch device 1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "201b0eb0-5619-11ef-aa15-a127638e3a77"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "x6kuBls18mCQkZY7HUxj",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "6715ab91-69e7-11ef-8345-c396246a79d7"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "201b0eb0-5619-11ef-aa15-a127638e3a77"
+    },
+    "type" : "deviceToBranch",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "6715ab91-69e7-11ef-8345-c396246a79d7"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2c03eb80-560e-11ef-af78-d14e180afdf5"
+    },
+    "type" : "fromDeviceToHeadOffice",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "accessControl",
+      "lastUpdateTs" : 1725444246558,
+      "longValue" : null,
+      "strValue" : "Online"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1725363420968,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "bas",
+      "lastUpdateTs" : 1725443670711,
+      "longValue" : null,
+      "strValue" : "Online"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cctv",
+      "lastUpdateTs" : 1725444196989,
+      "longValue" : null,
+      "strValue" : "Online"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fas",
+      "lastUpdateTs" : 1725444180202,
+      "longValue" : null,
+      "strValue" : "Online"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "gateway",
+      "lastUpdateTs" : 1726125478934,
+      "longValue" : null,
+      "strValue" : "onlinre"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ifsc",
+      "lastUpdateTs" : 1725444157880,
+      "longValue" : null,
+      "strValue" : "1156456456"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1725363420968,
+      "longValue" : 1725363420963,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "name",
+      "lastUpdateTs" : 1725444137162,
+      "longValue" : null,
+      "strValue" : "name"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "timeLock",
+      "lastUpdateTs" : 1725444221989,
+      "longValue" : null,
+      "strValue" : "Online"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

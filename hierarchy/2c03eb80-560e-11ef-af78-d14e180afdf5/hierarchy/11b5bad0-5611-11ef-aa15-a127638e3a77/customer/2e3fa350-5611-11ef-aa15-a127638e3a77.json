@@ -1,0 +1,98 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "11b5bad0-5611-11ef-aa15-a127638e3a77"
+    },
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2e3fa350-5611-11ef-aa15-a127638e3a77"
+    },
+    "name" : "ZO-1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "11b5bad0-5611-11ef-aa15-a127638e3a77"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "11b5bad0-5611-11ef-aa15-a127638e3a77"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "ZO-1",
+    "zip" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "201b0eb0-5619-11ef-aa15-a127638e3a77"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2e3fa350-5611-11ef-aa15-a127638e3a77"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "28e2d460-5619-11ef-aa15-a127638e3a77"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2e3fa350-5611-11ef-aa15-a127638e3a77"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2e3fa350-5611-11ef-aa15-a127638e3a77"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "11b5bad0-5611-11ef-aa15-a127638e3a77"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2e3fa350-5611-11ef-aa15-a127638e3a77"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2c03eb80-560e-11ef-af78-d14e180afdf5"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temp",
+      "lastUpdateTs" : 1723296242070,
+      "longValue" : 20,
+      "strValue" : null
+    } ]
+  }
+}

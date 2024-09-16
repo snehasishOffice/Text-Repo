@@ -1,0 +1,33 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "branch_header_widget",
+    "name" : "Branch Header Widget",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div class=\"container\">\n    <ul class=\"menu\" style=\"marginLeft: 10px\">\n        <li class=\"menu__item\" (click)=\"navToState()\"><mat-icon class=\"icon\">arrow_back</mat-icon>Back</li>\n    </ul>\n    <button *ngIf=\"show\" class=\"comparison\" (click)=\"openDashboard()\">Device dashboard</button>\n</div>",
+      "templateCss" : ".container {\n    height: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.menu {\n    list-style-type: none;;\n    display: flex;\n    align-items: center;\n    padding: 0;\n}\n.icon {\n    height: 15px;\n    font-size: 15px;\n    margin-left: 5px;\n}\n.menu__item {\n    font-size: 13px;\n    color: #7E8088;\n    cursor: pointer;\n    display: flex;\n}\n.menu__item:hover {\n    text-decoration-line: underline;\n    color: #080B58;\n}\n\n.comparison {\n    background-color: var(--tb-primary-500);\n    color: #FEFEFE;\n    font-family: Roboto;\n    font-size: 14px;\n    font-weight: 400;\n    text-align: center;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    border-radius: 20px;\n    height: 80%;\n    padding-left: 10px;\n    padding-right: 10px;\n    /*width: 10%;*/\n}",
+      "controllerScript" : "self.onInit = function() {\r\n    let stateController = self.ctx.$scope.ctx.stateController;\r\n    \r\n    let currentState = stateController.stateValue;\r\n    \r\n    \r\n    self.ctx.$scope.show = true;\r\n    \r\n    if(currentState == \"branchDetails\"){\r\n        self.ctx.$scope.show = true;\r\n    } else self.ctx.$scope.show = false;\r\n    \r\n    if(stateController){\r\n        self.ctx.$scope.navToState = function() {\r\n            stateController.navigatePrevState(1);\r\n        }\r\n    }\r\n    \r\n    if(stateController.stateObject.length <= 2){\r\n        self.ctx.$scope.navToState = function() {\r\n            stateController.navigatePrevState(0);\r\n        }\r\n    }\r\n    \r\n    self.ctx.$scope.openDashboard = function(){\r\n        let params = self.ctx.$scope.ctx.stateController.getStateParams();\r\n        let actionEventDescriptors = self.ctx.$scope.ctx.actionsApi.getActionDescriptors('elementClick');\r\n        let actionEvent;\r\n            \r\n        if (actionEventDescriptors.length) {\t\r\n            actionEventDescriptors.forEach(action=>{\r\n                if(action.name == 'Open Dashboard'){\r\n                    actionEvent = action;\r\n                }\r\n            });\r\n                \r\n            setTimeout(() => {\r\n                self.ctx.$scope.ctx.actionsApi.handleWidgetAction(null, actionEvent, null, null);\t\r\n            }, 0);\t\r\n        }\r\n    }\r\n}\r\n\r\nself.actionSources = function() {\r\n    return {\r\n        'elementClick': {\r\n            name: 'widget-action.element-click',\r\n            multiple: true\r\n        }\r\n    };\r\n}\r\n\r\nself.onDestroy = function() {\r\n}\r\n",
+      "settingsSchema" : "",
+      "dataKeySettingsSchema" : "",
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"Branch Header Widget\",\"dropShadow\":true}"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "bb8c2b70-6a9d-11ef-8345-c396246a79d7"
+    },
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "snehasish_seple_",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "88b75d00-69da-11ef-ad34-09a4a01156a8"
+    },
+    "image" : null,
+    "name" : "Snehasish(seple)",
+    "order" : null,
+    "title" : "Snehasish(seple)"
+  },
+  "fqns" : [ "navbar", "count_device_widget", "branch_header", "branch_table", "branch_header_widget", "user_table", "uptime_widget", "cctv_widget", "system_status_widget" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "28e2d460-5619-11ef-aa15-a127638e3a77"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "cde63f80-54b4-11ef-aa15-a127638e3a77"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "9857b5c0-6a8e-11ef-8345-c396246a79d7"
+    },
+    "label" : "",
+    "name" : "Branch Deviece2",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "28e2d460-5619-11ef-aa15-a127638e3a77"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "nocIp1iaX7icmjOigtcg",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "9857b5c0-6a8e-11ef-8345-c396246a79d7"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "28e2d460-5619-11ef-aa15-a127638e3a77"
+    },
+    "type" : "deviceToBranch",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "9857b5c0-6a8e-11ef-8345-c396246a79d7"
+    },
+    "to" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2c03eb80-560e-11ef-af78-d14e180afdf5"
+    },
+    "type" : "fromDeviceToHeadOffice ",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1725435226878,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1725435226878,
+      "longValue" : 1725435226877,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"customerId\":\"bd83c590-419b-11ee-af4f-b7320cf3b43d\",\"cctv\":[],\"bas\":[],\"fas\":[],\"timeLock\":[],\"accessControl\":[],\"ias\":[],\"gateway\":[],\"text_sms\":null,\"text_call\":null}",
+      "key" : "notificationUsers",
+      "lastUpdateTs" : 1725448007735,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

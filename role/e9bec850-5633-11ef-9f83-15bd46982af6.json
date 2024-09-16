@@ -1,0 +1,27 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "name" : "Customer User Nane LHO-1",
+    "permissions" : {
+      "ALL" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : "add all operation users"
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "e9bec850-5633-11ef-9f83-15bd46982af6"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
